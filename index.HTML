@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login vopper</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="img/img/vopper.jpg" type="image/x-icon">
+
+   <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            animation: pulse 6s infinite;
+        }
+
+        .container {
+            background-color: rgba(138, 123, 183, 0.8); /* Fondo del formulario con transparencia */
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 900px; /* Ajusta el ancho máximo del formulario según tus preferencias */
+            box-shadow: 0 0 70px rgb(234, 239, 240); /* Sombra para resaltar el formulario */
+        }
+        
+        @keyframes pulse {
+            0% {
+                background-color: #5b096f;
+            }
+            100% {
+                background-color: #49185e;
+            }
+            100% {
+                background-color: #6d1393;
+            }
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .h1 {
+            background-color: antiquewhite;
+            color: aliceblue;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="element">
+            <div class="container">
+                <h1 class="text-center mb-4">Vopper</h1>
+                <form>
+                    <div class="form-group">
+                        <h3>
+                            <label for="inputEmail">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Ingrese su correo" required>
+                        </h3>
+                    </div>
+                    <div class="form-group">
+                        <h3>
+                            <label for="inputPassword">Contraseña:</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Ingrese su contraseña" required>
+                        </h3>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                </form>
+                <br>
+                <h5><p class="text-center">O inicia sesión con:</p></h5>
+                <center>
+                    <div class="social-logos">
+                        <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fjoin" class="social-logo">
+                            <img src="img/img/github.png" alt="GitHub">
+                        </a>
+                        <a href="https://accounts.google.com/accountchooser/identifier?checkedDomains=youtube&dsh=S2013463979%3A1702364071025140&flowEntry=AccountChooser&flowName=GlifWebSignIn&hl=es_419&ifkv=ASKXGp19lPOtDO85KTXZDVJk8lXarUOPFS-lj3yqUNTGdww806_0oTvXbzlZkGpuyRtTxV1DAuyf5A&pstMsg=1&theme=glif" class="social-logo">
+                            <img src="img/img/google.png" alt="Google">
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
